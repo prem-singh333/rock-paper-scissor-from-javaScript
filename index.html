@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="game-title">Rock-Paper-Scissor</h1>
+
+    <div class="score-box">
+        <p class="text" id="comScore"></p>
+        <p class="text" id="userScore"></p>
+    </div>
+
+    <div class="game-box">
+        <div class="box">
+            <div id="rock" class="choices" onClick="userChoice(id)">
+                <img src="./public/image/rock.jpg" alt="rock_img">
+                <p>Rock</p>
+            </div>
+
+            <div id="paper" class="choices" onClick="userChoice(id)">
+                <img src="./public/image/paper.jpg" alt="paper_img">
+                <p>Paper</p>
+            </div>
+
+            <div id="scissor" class="choices" onClick="userChoice(id)">
+                <img src="./public/image/scissors.jpg" alt="scissor_img">
+                <p>Scissor</p>
+            </div>
+        </div>
+        <p class="won-text"></p>
+    </div>
+
+    <div class="btn-box">
+        <button onClick="new_game()" class="btn" id="newGame">New Game</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
